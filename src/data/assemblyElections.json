@@ -1,0 +1,408 @@
+[
+  {
+    "assemblyNumber": 58,
+    "assemblyName": "Malakpet",
+    "year": 2023,
+    "registeredElectors": 317875,
+    "totalValidVotes": 131143,
+    "turnout": 41.56,
+    "winner": {
+      "candidate": "Ahmed Bin Abdullah Balala",
+      "party": "AIMIM",
+      "votes": 55805,
+      "voteShare": 42.55
+    },
+    "runnerUp": {
+      "candidate": "Shaik Akbar",
+      "party": "INC",
+      "votes": 29699,
+      "voteShare": 22.65
+    },
+    "winningMargin": 26106,
+    "candidates": [
+      {
+        "candidate": "Ahmed Bin Abdullah Balala",
+        "party": "AIMIM",
+        "votes": 55805,
+        "voteShare": 42.55,
+        "winner": true
+      },
+      {
+        "candidate": "Shaik Akbar",
+        "party": "INC",
+        "votes": 29699,
+        "voteShare": 22.65,
+        "winner": false
+      },
+      {
+        "candidate": "Samreddy Surender Reddy",
+        "party": "BJP",
+        "votes": 23731,
+        "voteShare": 18.1,
+        "winner": false
+      },
+      {
+        "candidate": "Ajeet Reddy. T",
+        "party": "BRS",
+        "votes": 18646,
+        "voteShare": 14.22,
+        "winner": false
+      },
+      {
+        "candidate": "NOTA",
+        "party": "NOTA",
+        "votes": 881,
+        "voteShare": 0.67,
+        "winner": false
+      }
+    ]
+  },
+  {
+    "assemblyNumber": 64,
+    "assemblyName": "Karwan",
+    "year": 2023,
+    "registeredElectors": 359485,
+    "totalValidVotes": 174940,
+    "turnout": 48.91,
+    "winner": {
+      "candidate": "Kausar Mohiuddin",
+      "party": "AIMIM",
+      "votes": 83388,
+      "voteShare": 47.67
+    },
+    "runnerUp": {
+      "candidate": "Amar Singh",
+      "party": "BJP",
+      "votes": 41402,
+      "voteShare": 23.67
+    },
+    "winningMargin": 41986,
+    "candidates": [
+      {
+        "candidate": "Kausar Mohiuddin",
+        "party": "AIMIM",
+        "votes": 83388,
+        "voteShare": 47.67,
+        "winner": true
+      },
+      {
+        "candidate": "Amar Singh",
+        "party": "BJP",
+        "votes": 41402,
+        "voteShare": 23.67,
+        "winner": false
+      },
+      {
+        "candidate": "Aindala Krishna",
+        "party": "BRS",
+        "votes": 29194,
+        "voteShare": 16.69,
+        "winner": false
+      },
+      {
+        "candidate": "Osman Bin Mohammed Al Hajri",
+        "party": "INC",
+        "votes": 18160,
+        "voteShare": 10.38,
+        "winner": false
+      },
+      {
+        "candidate": "NOTA",
+        "party": "NOTA",
+        "votes": 896,
+        "voteShare": 0.51,
+        "winner": false
+      }
+    ]
+  },
+  {
+    "assemblyNumber": 65,
+    "assemblyName": "Goshamahal",
+    "year": 2023,
+    "registeredElectors": 270633,
+    "totalValidVotes": 147633,
+    "turnout": 55.53,
+    "winner": {
+      "candidate": "T. Raja Singh",
+      "party": "BJP",
+      "votes": 80182,
+      "voteShare": 54.31
+    },
+    "runnerUp": {
+      "candidate": "Nandu Bilal",
+      "party": "BRS",
+      "votes": 58725,
+      "voteShare": 39.78
+    },
+    "winningMargin": 21457,
+    "candidates": [
+      {
+        "candidate": "T. Raja Singh",
+        "party": "BJP",
+        "votes": 80182,
+        "voteShare": 54.31,
+        "winner": true
+      },
+      {
+        "candidate": "Nandu Bilal",
+        "party": "BRS",
+        "votes": 58725,
+        "voteShare": 39.78,
+        "winner": false
+      },
+      {
+        "candidate": "Mogili Sunitha",
+        "party": "INC",
+        "votes": 6265,
+        "voteShare": 4.24,
+        "winner": false
+      },
+      {
+        "candidate": "NOTA",
+        "party": "NOTA",
+        "votes": 626,
+        "voteShare": 0.42,
+        "winner": false
+      }
+    ]
+  },
+  {
+    "assemblyNumber": 66,
+    "assemblyName": "Charminar",
+    "year": 2023,
+    "registeredElectors": 226126,
+    "totalValidVotes": 97266,
+    "turnout": 43.39,
+    "winner": {
+      "candidate": "Mir Zulfeqar Ali",
+      "party": "AIMIM",
+      "votes": 49103,
+      "voteShare": 50.48
+    },
+    "runnerUp": {
+      "candidate": "Megha Rani Agarwal",
+      "party": "BJP",
+      "votes": 26250,
+      "voteShare": 26.99
+    },
+    "winningMargin": 22853,
+    "candidates": [
+      {
+        "candidate": "Mir Zulfeqar Ali",
+        "party": "AIMIM",
+        "votes": 49103,
+        "voteShare": 50.48,
+        "winner": true
+      },
+      {
+        "candidate": "Megha Rani Agarwal",
+        "party": "BJP",
+        "votes": 26250,
+        "voteShare": 26.99,
+        "winner": false
+      },
+      {
+        "candidate": "Mohammed Mujeebullah Shareef",
+        "party": "INC",
+        "votes": 10899,
+        "voteShare": 11.21,
+        "winner": false
+      },
+      {
+        "candidate": "Mohammed Salauddin Lodhi",
+        "party": "BRS",
+        "votes": 8874,
+        "voteShare": 9.12,
+        "winner": false
+      },
+      {
+        "candidate": "NOTA",
+        "party": "NOTA",
+        "votes": 837,
+        "voteShare": 0.86,
+        "winner": false
+      }
+    ]
+  },
+  {
+    "assemblyNumber": 67,
+    "assemblyName": "Chandrayangutta",
+    "year": 2023,
+    "registeredElectors": 337912,
+    "totalValidVotes": 152311,
+    "turnout": 45.51,
+    "winner": {
+      "candidate": "Akbar Uddin Owaisi",
+      "party": "AIMIM",
+      "votes": 99776,
+      "voteShare": 65.51
+    },
+    "runnerUp": {
+      "candidate": "Sitharam Reddy Muppi",
+      "party": "BRS",
+      "votes": 18116,
+      "voteShare": 11.89
+    },
+    "winningMargin": 81660,
+    "candidates": [
+      {
+        "candidate": "Akbar Uddin Owaisi",
+        "party": "AIMIM",
+        "votes": 99776,
+        "voteShare": 65.51,
+        "winner": true
+      },
+      {
+        "candidate": "Sitharam Reddy Muppi",
+        "party": "BRS",
+        "votes": 18116,
+        "voteShare": 11.89,
+        "winner": false
+      },
+      {
+        "candidate": "Kowdi Mahender",
+        "party": "BJP",
+        "votes": 16414,
+        "voteShare": 10.78,
+        "winner": false
+      },
+      {
+        "candidate": "Boya Nagesh",
+        "party": "INC",
+        "votes": 14589,
+        "voteShare": 9.58,
+        "winner": false
+      },
+      {
+        "candidate": "NOTA",
+        "party": "NOTA",
+        "votes": 1460,
+        "voteShare": 0.96,
+        "winner": false
+      }
+    ]
+  },
+  {
+    "assemblyNumber": 68,
+    "assemblyName": "Yakutpura",
+    "year": 2023,
+    "registeredElectors": 353141,
+    "totalValidVotes": 139730,
+    "turnout": 39.77,
+    "winner": {
+      "candidate": "Jaffar Hussain",
+      "party": "AIMIM",
+      "votes": 46153,
+      "voteShare": 33.03
+    },
+    "runnerUp": {
+      "candidate": "Amjed Ullah Khan",
+      "party": "MBT",
+      "votes": 45275,
+      "voteShare": 32.4
+    },
+    "winningMargin": 878,
+    "candidates": [
+      {
+        "candidate": "Jaffar Hussain",
+        "party": "AIMIM",
+        "votes": 46153,
+        "voteShare": 33.03,
+        "winner": true
+      },
+      {
+        "candidate": "Amjed Ullah Khan",
+        "party": "MBT",
+        "votes": 45275,
+        "voteShare": 32.4,
+        "winner": false
+      },
+      {
+        "candidate": "N Veerender Babu Yadav",
+        "party": "BJP",
+        "votes": 22354,
+        "voteShare": 16,
+        "winner": false
+      },
+      {
+        "candidate": "Sama Sunder Reddy",
+        "party": "BRS",
+        "votes": 15516,
+        "voteShare": 11.1,
+        "winner": false
+      },
+      {
+        "candidate": "K. Ravi Raj",
+        "party": "INC",
+        "votes": 6954,
+        "voteShare": 4.98,
+        "winner": false
+      },
+      {
+        "candidate": "NOTA",
+        "party": "NOTA",
+        "votes": 704,
+        "voteShare": 0.5,
+        "winner": false
+      }
+    ]
+  },
+  {
+    "assemblyNumber": 69,
+    "assemblyName": "Bahadurpura",
+    "year": 2023,
+    "registeredElectors": 316675,
+    "totalValidVotes": 142446,
+    "turnout": 45.6,
+    "winner": {
+      "candidate": "Mohammed Mubeen",
+      "party": "AIMIM",
+      "votes": 89451,
+      "voteShare": 62.8
+    },
+    "runnerUp": {
+      "candidate": "Mir Inayath Ali Baqri",
+      "party": "BRS",
+      "votes": 22426,
+      "voteShare": 15.74
+    },
+    "winningMargin": 67025,
+    "candidates": [
+      {
+        "candidate": "Mohammed Mubeen",
+        "party": "AIMIM",
+        "votes": 89451,
+        "voteShare": 62.8,
+        "winner": true
+      },
+      {
+        "candidate": "Mir Inayath Ali Baqri",
+        "party": "BRS",
+        "votes": 22426,
+        "voteShare": 15.74,
+        "winner": false
+      },
+      {
+        "candidate": "Pulipati Rajesh Kumar",
+        "party": "INC",
+        "votes": 14448,
+        "voteShare": 10.14,
+        "winner": false
+      },
+      {
+        "candidate": "Y. Naresh",
+        "party": "BJP",
+        "votes": 11621,
+        "voteShare": 8.16,
+        "winner": false
+      },
+      {
+        "candidate": "NOTA",
+        "party": "NOTA",
+        "votes": 1279,
+        "voteShare": 0.9,
+        "winner": false
+      }
+    ]
+  }
+]

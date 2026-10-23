@@ -1,0 +1,122 @@
+[
+  {
+    "year": 2014,
+    "registeredElectors": 1823217,
+    "totalVotesPolled": 971770,
+      "totalValidVotes": 971421,
+    "winner": "Asaduddin Owaisi",
+    "winnerParty": "AIMIM",
+    "winningMargin": 202454,
+    "turnout": 53.3,
+    "candidates": [
+      {
+        "candidate": "Asaduddin Owaisi",
+        "party": "AIMIM",
+        "votes": 513868,
+        "voteShare": 52.9,
+        "winner": true
+      },
+      {
+        "candidate": "Dr. Bhagavanth Rao",
+        "party": "BJP",
+        "votes": 311414,
+        "voteShare": 32.1,
+        "winner": false
+      },
+      {
+        "candidate": "S Krishna Reddy",
+        "party": "INC",
+        "votes": 49310,
+        "voteShare": 5.1,
+        "winner": false
+      },
+      {
+        "candidate": "Rashid Shareef",
+        "party": "TRS",
+        "votes": 37195,
+        "voteShare": 3.8,
+        "winner": false
+      }
+    ]
+  },
+  {
+    "year": 2019,
+    "registeredElectors": 1957931,
+    "totalVotesPolled": 877872,
+     "totalValidVotes": 877872,
+    "winner": "Asaduddin Owaisi",
+    "winnerParty": "AIMIM",
+    "winningMargin": 282186,
+    "turnout": 44.84,
+    "candidates": [
+      {
+        "candidate": "Asaduddin Owaisi",
+        "party": "AIMIM",
+        "votes": 517471,
+        "voteShare": 58.95,
+        "winner": true
+      },
+      {
+        "candidate": "Dr. Bhagavanth Rao",
+        "party": "BJP",
+        "votes": 235285,
+        "voteShare": 26.8,
+        "winner": false
+      },
+      {
+        "candidate": "Pusthe Srikanth",
+        "party": "TRS",
+        "votes": 63239,
+        "voteShare": 7.2,
+        "winner": false
+      },
+      {
+        "candidate": "Mohammed Feroz Khan",
+        "party": "INC",
+        "votes": 49944,
+        "voteShare": 5.69,
+        "winner": false
+      }
+    ]
+  },
+  {
+    "year": 2024,
+    "registeredElectors": 2217305,
+    "totalVotesPolled": 1081878,
+    "totalValidVotes": 1080324,
+    "winner": "Asaduddin Owaisi",
+    "winnerParty": "AIMIM",
+    "winningMargin": 338087,
+    "turnout": 48.8,
+    "candidates": [
+      {
+        "candidate": "Asaduddin Owaisi",
+        "party": "AIMIM",
+        "votes": 661981,
+        "voteShare": 61.28,
+        "winner": true
+      },
+      {
+        "candidate": "Madhavi Latha Kompella",
+        "party": "BJP",
+        "votes": 323894,
+        "voteShare": 29.98,
+        "winner": false
+      },
+      {
+        "candidate": "Mohammed Waliullah Sameer",
+        "party": "INC",
+        "votes": 62962,
+        "voteShare": 5.83,
+        "winner": false
+      },
+      {
+        "candidate": "Srinivas Yadav Gaddam",
+        "party": "BRS",
+        "votes": 18641,
+        "voteShare": 1.73,
+        "winner": false
+      }
+    ]
+  }
+]

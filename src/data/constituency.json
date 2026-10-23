@@ -1,0 +1,17 @@
+{
+  "name": "Hyderabad",
+  "number": 9,
+  "state": "Telangana",
+  "referenceYear": 2024,
+  "totalElectors": 2217305,
+  "geographicalCoverage": "Covers 7 Assembly Constituencies within the Hyderabad Lok Sabha Constituency",
+  "assemblyConstituencies": [
+    { "number": 58, "name": "Malakpet" },
+    { "number": 64, "name": "Karwan" },
+    { "number": 65, "name": "Goshamahal" },
+    { "number": 66, "name": "Charminar" },
+    { "number": 67, "name": "Chandrayangutta" },
+    { "number": 68, "name": "Yakutpura" },
+    { "number": 69, "name": "Bahadurpura" }
+  ]
+}
