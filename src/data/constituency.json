@@ -5,6 +5,14 @@
   "referenceYear": 2024,
   "totalElectors": 2217305,
   "geographicalCoverage": "Covers 7 Assembly Constituencies within the Hyderabad Lok Sabha Constituency",
+  "demographics": {
+    "population": null,
+    "genderDistribution": null,
+    "ruralUrban": null,
+    "literacyRate": null,
+    "scPopulation": null,
+    "stPopulation": null
+  },
   "assemblyConstituencies": [
     { "number": 58, "name": "Malakpet" },
     { "number": 64, "name": "Karwan" },

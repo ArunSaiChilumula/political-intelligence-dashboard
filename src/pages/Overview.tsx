@@ -102,20 +102,35 @@ function Overview() {
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
-          <DemographicCard title="Population" value="Data unavailable" />
+          <DemographicCard
+            title="Population"
+            value={constituencyData.demographics.population ?? "Data unavailable"}
+          />
 
           <DemographicCard
             title="Gender Distribution"
-            value="Data unavailable"
+            value={constituencyData.demographics.genderDistribution ?? "Data unavailable"}
           />
 
-          <DemographicCard title="Rural / Urban" value="Data unavailable" />
+          <DemographicCard
+            title="Rural / Urban"
+            value={constituencyData.demographics.ruralUrban ?? "Data unavailable"}
+          />
 
-          <DemographicCard title="Literacy Rate" value="Data unavailable" />
+          <DemographicCard
+            title="Literacy Rate"
+            value={constituencyData.demographics.literacyRate ?? "Data unavailable"}
+          />
 
-          <DemographicCard title="SC Population" value="Data unavailable" />
+          <DemographicCard
+            title="SC Population"
+            value={constituencyData.demographics.scPopulation ?? "Data unavailable"}
+          />
 
-          <DemographicCard title="ST Population" value="Data unavailable" />
+          <DemographicCard
+            title="ST Population"
+            value={constituencyData.demographics.stPopulation ?? "Data unavailable"}
+          />
         </div>
 
         <p className="text-xs text-slate-400 mt-5">
