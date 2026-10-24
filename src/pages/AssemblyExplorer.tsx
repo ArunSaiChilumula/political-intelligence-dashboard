@@ -10,6 +10,11 @@ import {
 } from "recharts";
 import assemblyData from "../data/assemblyElections.json";
 import CustomDropdown from "../components/CustomDropdown";
+import {
+  calculateVoteShare,
+  calculateWinningMargin,
+  calculateWinningMarginPercentage,
+} from "../utils/electionCalculations.ts";
 
 function AssemblyExplorer() {
   const [selectedAssembly, setSelectedAssembly] = useState(58);
@@ -24,10 +29,14 @@ function AssemblyExplorer() {
     return <p>No election data available.</p>;
   }
 
-  const winningMargin = filteredData.winner.votes - filteredData.runnerUp.votes;
-  const marginPercentage = filteredData.totalValidVotes > 0
-    ? (winningMargin / filteredData.totalValidVotes) * 100
-    : 0;
+  const winningMargin = calculateWinningMargin(
+    filteredData.winner.votes,
+    filteredData.runnerUp.votes,
+  );
+  const marginPercentage = calculateWinningMarginPercentage(
+    winningMargin,
+    filteredData.totalValidVotes,
+  );
 
   const assemblyComparisonData = assemblyData.map((assembly) => ({
     name: assembly.assemblyName,
@@ -101,9 +110,7 @@ function AssemblyExplorer() {
           </strong>
 
           <span className="kpi-subtext">
-            {filteredData.totalValidVotes > 0
-              ? ((filteredData.winner.votes / filteredData.totalValidVotes) * 100).toFixed(2)
-              : "0.00"}% vote share
+            {calculateVoteShare(filteredData.winner.votes, filteredData.totalValidVotes).toFixed(2)}% vote share
           </span>
         </div>
 
@@ -156,9 +163,7 @@ function AssemblyExplorer() {
                   <td>{candidate.votes.toLocaleString()}</td>
 
                   <td>
-                    {filteredData.totalValidVotes > 0
-                      ? ((candidate.votes / filteredData.totalValidVotes) * 100).toFixed(2)
-                      : "0.00"}%
+                    {calculateVoteShare(candidate.votes, filteredData.totalValidVotes).toFixed(2)}%
                   </td>
 
                   <td>

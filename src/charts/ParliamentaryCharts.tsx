@@ -12,6 +12,11 @@ import {
 } from "recharts";
 
 import parliamentaryData from "../data/parliamentaryElections.json";
+import {
+  calculateTurnout,
+  calculateVoteShare,
+  calculateWinningMargin,
+} from "../utils/electionCalculations.ts";
 
 type PartyPerformanceDatum = {
   year: number;
@@ -29,16 +34,16 @@ function ParliamentaryCharts() {
       .sort((a, b) => b.votes - a.votes)[0];
 
     const winnerVoteShare = winner
-      ? (winner.votes / election.totalValidVotes) * 100
+      ? calculateVoteShare(winner.votes, election.totalValidVotes)
       : 0;
 
     return {
       year: election.year,
-      turnout: election.registeredElectors > 0
-        ? (election.totalVotesPolled / election.registeredElectors) * 100
-        : 0,
+      turnout: calculateTurnout(election.totalVotesPolled, election.registeredElectors),
       voteShare: winnerVoteShare,
-      margin: winner && runnerUp ? winner.votes - runnerUp.votes : 0,
+      margin: winner && runnerUp
+        ? calculateWinningMargin(winner.votes, runnerUp.votes)
+        : 0,
     };
   });
 
@@ -64,9 +69,10 @@ function ParliamentaryCharts() {
       };
 
       for (const party of ["AIMIM", "BJP", "INC", "TRS / BRS"] as const) {
-        result[party] = election.totalValidVotes > 0
-          ? ((partyVotes[party] ?? 0) / election.totalValidVotes) * 100
-          : 0;
+        result[party] = calculateVoteShare(
+          partyVotes[party] ?? 0,
+          election.totalValidVotes,
+        );
       }
 
       return result;

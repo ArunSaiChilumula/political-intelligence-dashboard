@@ -3,6 +3,12 @@ import parliamentaryData from "../data/parliamentaryElections.json";
 import ParliamentaryCharts from "../charts/ParliamentaryCharts";
 import DataSources from "./DataSources";
 import CustomDropdown from "./CustomDropdown";
+import {
+  calculateTurnout,
+  calculateVoteShare,
+  calculateWinningMargin,
+  calculateWinningMarginPercentage,
+} from "../utils/electionCalculations.ts";
 
 function ParliamentarySection() {
   const [selectedYear, setSelectedYear] = useState(2024);
@@ -23,20 +29,22 @@ function ParliamentarySection() {
     .filter((candidate) => !candidate.winner)
     .sort((a, b) => b.votes - a.votes)[0];
 
-  const calculatedMargin =
-    winner && runnerUp ? winner.votes - runnerUp.votes : 0;
+  const calculatedMargin = winner && runnerUp
+    ? calculateWinningMargin(winner.votes, runnerUp.votes)
+    : 0;
 
   const winnerVoteShare = winner
-    ? (winner.votes / election.totalValidVotes) * 100
+    ? calculateVoteShare(winner.votes, election.totalValidVotes)
     : 0;
 
-  const winningMarginPercentage =
-    election.totalValidVotes > 0
-      ? (calculatedMargin / election.totalValidVotes) * 100
-      : 0;
-  const turnout = election.registeredElectors > 0
-    ? (election.totalVotesPolled / election.registeredElectors) * 100
-    : 0;
+  const winningMarginPercentage = calculateWinningMarginPercentage(
+    calculatedMargin,
+    election.totalValidVotes,
+  );
+  const turnout = calculateTurnout(
+    election.totalVotesPolled,
+    election.registeredElectors,
+  );
 
   return (
     <section>
@@ -146,10 +154,7 @@ function ParliamentarySection() {
                   </td>
 
                   <td className="px-6 py-4">
-                    {(
-                      (candidate.votes / election.totalValidVotes) *
-                      100
-                    ).toFixed(2)}
+                    {calculateVoteShare(candidate.votes, election.totalValidVotes).toFixed(2)}
                     %
                   </td>
 

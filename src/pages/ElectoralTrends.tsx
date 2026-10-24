@@ -9,17 +9,16 @@ import {
 } from "recharts";
 
 import parliamentaryData from "../data/parliamentaryElections.json";
+import { calculateTurnout, calculateVoteShare } from "../utils/electionCalculations.ts";
 
 function ElectoralTrends() {
   const trendData = parliamentaryData.map((election) => ({
     year: election.year,
-    winnerVoteShare:
-      (election.candidates.find((candidate) => candidate.winner)?.votes ?? 0) /
-      election.totalValidVotes *
-      100,
-    turnout: election.registeredElectors > 0
-      ? (election.totalVotesPolled / election.registeredElectors) * 100
-      : 0,
+    winnerVoteShare: calculateVoteShare(
+      election.candidates.find((candidate) => candidate.winner)?.votes ?? 0,
+      election.totalValidVotes,
+    ),
+    turnout: calculateTurnout(election.totalVotesPolled, election.registeredElectors),
     winningMargin: election.winningMargin,
   }));
 
