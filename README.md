@@ -20,6 +20,7 @@ The dashboard focuses on the **Hyderabad Lok Sabha Constituency (Constituency No
 - Responsive layout for desktop, tablet, and mobile
 - Explicit unavailable-data states
 - Calculation methodology section
+- Automated unit and component tests
 
 ## Technology Stack
 
@@ -29,6 +30,8 @@ The dashboard focuses on the **Hyderabad Lok Sabha Constituency (Constituency No
 - Tailwind CSS
 - Recharts
 - Lucide React
+- Vitest
+- React Testing Library
 
 ## Project Structure
 
@@ -39,16 +42,22 @@ src/
 │ ├── Overview.tsx
 │ ├── AssemblyExplorer.tsx
 │ └── ElectoralTrends.tsx
+├── charts/
+│ └── ParliamentaryCharts.tsx
 ├── data/
 │ ├── constituency.json
 │ ├── parliamentaryElections.json
 │ └── assemblyElections.json
-├── types/
-├── services/
 ├── utils/
+│ ├── electionCalculations.ts
+│ └── electionCalculations.test.ts
+├── test/
+│ └── setup.ts
 ├── App.tsx
 ├── index.css
 └── main.tsx
+
+Component and data tests are colocated with the relevant application areas.
 
 ## Data Sources
 
@@ -90,22 +99,22 @@ Assembly constituencies represented:
 
 ### Vote Share
 
-Vote Share (%) =
+Vote Share (%) =  
 Candidate Votes ÷ Total Valid Votes × 100
 
 ### Winning Margin
 
-Winning Margin =
+Winning Margin =  
 Winner Votes − Runner-up Votes
 
 ### Winning Margin Percentage
 
-Winning Margin (%) =
+Winning Margin (%) =  
 Winning Margin ÷ Total Valid Votes × 100
 
 ### Voter Turnout
 
-Turnout (%) =
+Turnout (%) =  
 Votes Polled ÷ Registered Electors × 100
 
 The dashboard uses the appropriate denominator for each calculation and displays percentages rounded to two decimal places.
@@ -132,6 +141,25 @@ This applies to demographic indicators such as:
 The constituency demographic reference year shown in the dashboard is **2024**.
 
 Election results are associated with their respective election years and should not be interpreted as demographic reference years.
+
+## Testing
+
+The project includes automated tests for:
+
+- Electoral calculation formulas
+- Parliamentary election data
+- Application navigation
+- Parliamentary results UI
+- Assembly Explorer UI
+- Electoral Trends UI
+
+Run the test suite with:
+
+npm run test:run
+
+For interactive test execution:
+
+npm run test
 
 ## Limitations
 
@@ -180,5 +208,3 @@ npm run preview
 - Add API-based data loading.
 - Add table sorting and pagination.
 - Add richer party performance comparisons.
-- Add automated tests for calculations and UI components.
-- Add source links directly to individual data sections.
